@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   content: [
@@ -15,9 +16,12 @@ const config: Config = {
       },
       boxShadow: {
         'btn-primary': '0px 0px 8px 0px var(--clr-primary-300);',
+        'search-input': '0px 0px 15px 0px rgba(0, 0, 0, 0.06);',
+        'search-section':'0px 0px 30px 0px rgba(0, 0, 0, 0.10);',
       },
       spacing: {
         '19': '4.75rem',
+        'full-plus-12': 'calc(100% + 12px)',
       },
       height: {
         '119': '29.75rem',
@@ -29,6 +33,7 @@ const config: Config = {
         '7.5': '1.875rem',
       },
       colors: {
+        'hero':'var(--clr-bg-hero)',
         primary: {
           100: 'var(--clr-primary-100)',
           300: 'var(--clr-primary-300)',
@@ -37,12 +42,11 @@ const config: Config = {
         secondary: {
           50: 'var(--clr-secondary-50)',
           400: 'var(--clr-secondary-400)',
-
-          
         },
         neutral: {
           50: 'var(--clr-neutral-50)',
           100: 'var(--clr-neutral-100)',
+          150: 'var(--clr-neutral-150)',
           200: 'var(--clr-neutral-200)',
           300: 'var(--clr-neutral-300)',
           400: 'var(--clr-neutral-400)',
@@ -59,6 +63,27 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.placeholder-medium': {
+          '&::placeholder': {
+            fontWeight: '500',
+          },
+        },
+        '.placeholder-text-sm': {
+          '&::placeholder': {
+            fontSize: '14px',
+          },
+        },
+        '.placeholder-text-netural-300': {
+          '&::placeholder': {
+            color: 'var(--clr-neutral-300)',
+          },
+        },
+      }, 
+    );
+    }),
+  ],
 };
 export default config;

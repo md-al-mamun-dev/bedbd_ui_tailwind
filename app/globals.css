@@ -11,18 +11,18 @@
   --clr-primary-100:        hsl(18, 100%, 98.04%);
   --clr-primary-300:        hsl(28.72, 100%, 54.12%);
   --clr-primary-400:        hsl(29, 100%, 54%);
+  --clr-hero-background:    hsla(61, 53%, 79%, 0.25);
+  --clr-bg-hero:            hsla(61, 53%, 79%, 0.25);
+
 
 /* Secondary Colors */
-
-  --clr-secondary-50: hsl(240, 100%, 99.02%);
+  --clr-secondary-50:       hsl(240, 100%, 99.02%);
   --clr-secondary-400:      hsl(234, 86%, 61%);
 
 /* Neutral colors */
-/* #C2C2C2  */
    --clr-neutral-50: hsl(0, 0%, 94.12%);
-   /* --clr-neutral-50: #C2C2C2 ; */
-
   --clr-neutral-100: hsl(0, 0%, 94.12%);
+  --clr-neutral-150: hsl(0, 0%, 87%);
   --clr-neutral-200: hsl(0, 0%, 76.08%);
   --clr-neutral-300: hsl(0, 0%, 63.92%);
   --clr-neutral-400: hsl(0, 0%, 52.16%);
@@ -137,6 +137,10 @@
 
 
   /* Some outlines */
+  .custom-left-line-150::before {
+    content: '';
+    @apply absolute-y-center -left-4  h-[72%] w-px bg-neutral-150  
+  }
   .custom-left-line-200::before {
     content: '';
     @apply absolute left-0 top-0 h-full w-px bg-neutral-200  
@@ -148,6 +152,10 @@
   .custom-btm-line-300::after {
     content: '';
     @apply absolute-x-center top-12 w-full max-w-lg h-px bg-neutral-300  
+  }
+  .custom-btm-line-primary-400::after {
+    content: '';
+    @apply absolute-x-center top-6 w-full-plus-12 max-w-lg h-0.5 bg-primary-400  
   }
   .custom-bg-line-300::before{
     content: '';
@@ -198,7 +206,13 @@
 .header-shadow{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
 }
+/* .search-input-shadow{
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+} */
 
+.hero-background{
+  background: var(--clr-hero-background);
+}
 /* .btn-neumorphic-hover:hover{
   border-radius: 0px;
   background: #ffffff;
