@@ -96,17 +96,18 @@
     @apply relative left-1/2 transform -translate-x-1/2
   }
 
+  .tag-filter-active{ 
+    @apply bg-primary-400 text-white
+  }
 
+  /* Create Order number Using css */
   .numbered-items{
     counter-reset: listCount;
-    
    }
-  
   .numbered-items li{
   counter-increment: listCount;
   position: relative;
   }
-
   .numbered-items li::before{
   content: "0" counter( listCount) '.';
   position: absolute;
@@ -168,10 +169,20 @@
     @apply w-full text-center text-base font-medium py-3 rounded-md 
   }
   .btn-primary{
-    @apply  bg-primary-400 text-white hover:shadow-btn-primary hover:border-primary-400
+    @apply bg-primary-400 text-white hover:shadow-btn-primary hover:border-primary-400
   }
   .btn-secondary{
-    @apply  bg-transparent text-primary-400 text-base border border-primary-400 hover:border-primary-400 hover:shadow-btn-primary
+    @apply bg-transparent text-primary-400 text-base border border-primary-400 hover:border-primary-400 hover:shadow-btn-primary
+  }
+  .btn-tertiary{
+    @apply bg-transparent bg-white text-primary-400 text-base 
+  }
+  .btn-deactive{
+    @apply bg-transparent bg-white text-primary-400 text-base opacity-50
+  }
+
+  .banner-btn{
+    @apply text-center bg-white text-primary-400 font-semibold text-base py-6 rounded-full w-full max-w-64
   }
 /* ------------------------ */
 

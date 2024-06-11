@@ -9,15 +9,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+           '4/3': '4 / 3',
+        '145/89': '145/89',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
         'btn-primary': '0px 0px 8px 0px var(--clr-primary-300);',
         'search-input': '0px 0px 15px 0px rgba(0, 0, 0, 0.06);',
-        'search-section':'0px 0px 30px 0px rgba(0, 0, 0, 0.10);',
+        'search-section': '0px 0px 30px 0px rgba(0, 0, 0, 0.10);',
       },
       spacing: {
         '19': '4.75rem',
@@ -28,6 +31,16 @@ const config: Config = {
       },
       maxWidth: {
         '3.5xl': '52rem',
+        '395px': '395px',
+      },
+      maxHeight: {
+        '242px': '242px',
+      },
+      minWidth: {
+        '290px': '290px',
+      },
+      minHeight: {
+        '178px': '178px',
       },
       padding: {
         '7.5': '1.875rem',
@@ -64,6 +77,7 @@ const config: Config = {
     },
   },
   plugins: [
+
     plugin(function({ addUtilities }) {
       addUtilities({
         '.placeholder-medium': {
@@ -81,6 +95,18 @@ const config: Config = {
             color: 'var(--clr-neutral-300)',
           },
         },
+      }, 
+    );
+    }),
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar::-webkit-scrollbar': {
+          display:'none',
+        },
+        '.no-scrollbar':{
+          '-ms-overflow-style':'none',
+          'scrollbar-width':'none'
+        }
       }, 
     );
     }),
