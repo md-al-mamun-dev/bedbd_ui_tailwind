@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       aspectRatio: {
-           '4/3': '4 / 3',
+           '4/3': '4/3',
+          '31/22': '31/22',
         '145/89': '145/89',
       },
       backgroundImage: {
@@ -26,18 +27,27 @@ const config: Config = {
         '19': '4.75rem',
         'full-plus-12': 'calc(100% + 12px)',
       },
+      width: {
+        '342px': '342px',
+      },
       height: {
         '119': '29.75rem',
+        '242px': '242px',
       },
       maxWidth: {
         '3.5xl': '52rem',
         '395px': '395px',
+        '724px':'724px',
+        '978px':'978px'
+
       },
       maxHeight: {
         '242px': '242px',
       },
       minWidth: {
         '290px': '290px',
+        '490px': '490px',
+
       },
       minHeight: {
         '178px': '178px',

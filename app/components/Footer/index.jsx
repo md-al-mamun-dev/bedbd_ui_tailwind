@@ -5,8 +5,12 @@ import twitterIcon from '/public/icons/twitter_icon.svg'
 import instaIcon from '/public/icons/insta_icon.svg'
 import linkedinIcon from '/public/icons/linkedin_icoon.svg'
 import sendIcon from '/public/icons/ph_paper-plane.svg'
+import playStoreIcon from '/public/icons/ion_logo-google-playstore.svg'
+
+import appleStoreIcon from '/public/icons/ion_logo-apple-appstore.svg'
 
 
+// ion_logo-apple-appstore.svg
 // ph_paper-plane
 
 
@@ -21,10 +25,12 @@ export default function Footer() {
                 <p className="mx-auto  text-center lg:text-left text-neutral-50 text-base font-normal max-w-sm mb-12  w-max mx-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 
                 <div className="flex gap-x-4 max-w-sm mx-auto my-12 ">
-                    <button className="btn btn-secondary bg-white text-neutral-500 text-base font-semibold">
+                    <button className="btn btn-secondary bg-white text-neutral-500 text-base font-semibold flex justify-center gap-x-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                        <Image src={playStoreIcon} width={24} height={24}/>
                         PlayStore
                     </button>
-                    <button className="btn btn-secondary bg-white text-neutral-500 text-base font-semibold">
+                    <button className="btn btn-secondary bg-white text-neutral-500 text-base font-semibold flex justify-center gap-x-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                        <Image src={appleStoreIcon} width={24} height={24}/>
                         AppleStore
                     </button>
                 </div>
@@ -71,7 +77,7 @@ export default function Footer() {
 
             
 
-            <div className='flex justify-between w-max gap-x-6 text-neutral-50 top-full absolute right-1/2 transform translate-x-1/2 md:transform-none md:right-0 mt-6 lg:-mt-4 xl:-mt-12 '>
+            <div className='flex justify-between items-center w-max gap-x-6 text-neutral-50 top-full absolute right-1/2 transform translate-x-1/2 md:transform-none md:right-0 mt-6 lg:-mt-4 xl:-mt-12 '>
                 <div>
                     <div className='uppercase text-lg font-semibold '>NEWSLETTER</div>
                     <div className='text-sm font-medium '>Stay Update</div>
