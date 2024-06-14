@@ -107,11 +107,13 @@ export default function page() {
 
             <div className="min-h-96 flex flex-col xl:flex-row gap-4">
                 <div className="w-full  ">
+                    {/* Title */}
                     <div>
                         <h2 className="font-semibold text-3xl text-neutral-600">Ocean Blue, Labonno point, Cox bazar</h2>
                         <h4 className="font-normal text-lg text-neutral-400">467 Stutler Lane, Altoona, PA 16602</h4>
                     </div>
 
+                    {/* Facilities */}
                     <div className='flex flex-wrap justify-center mt-6 gap-6 text-neutral-600 text-lg font-semibold '>
                         <div className="w-40 h-36 bg-primary-100 rounded-lg text-center pt-10 relative">
                             <Image className='object-contain absolute-x-center bottom-16' src={bedIcon} height={42} width={42}/>
@@ -139,6 +141,7 @@ export default function page() {
                         </div>
                     </div>
 
+                    {/* About */}
                     <div className="mt-14">
                         <h3 className="text-2xl font-semibold text-neutral-700">About the Apartment</h3>
                         <div className="mt-6 space-y-4">
@@ -162,9 +165,10 @@ export default function page() {
                         </div>
                     </div>
 
+                    {/* Amenities */}
                     <div className="my-14 text-neutral-700">
                         <h3 className="text-2xl font-semibold ">Offered Amenities</h3>
-                        <ul className="space-y-6 mt-6 font-normal text-lg md:columns-2">
+                        <ul className="mb-8 space-y-6 mt-6 font-normal text-lg md:columns-2">
                             <li>
                                 <Image className='mr-6 inline' src={kitchenIcon} />
                                 Kitchen
@@ -190,8 +194,10 @@ export default function page() {
                                 BalconyIcon or Patio
                             </li>
                         </ul>
+                        <button className="w-full max-w-64 py-3 rounded-md bg-transparent border border-neutral-400 text-neutral-400 text-lg font-normal ">Show All 10 Amenities</button>
                     </div>
 
+                    {/* Home rules */}
                     <div className="my-14 text-neutral-700">
                         <h3 className="text-2xl font-semibold text-neutral-700">Home rules</h3>
                         <ul className="space-y-3 mt-6 font-normal text-lg">
@@ -207,6 +213,7 @@ export default function page() {
                         </ul>
                     </div>
 
+                    {/* Cancellation Policy */}
                     <div className="my-14">
                         <h3 className="text-2xl font-semibold text-neutral-700">Cancellation Policy</h3>
                         <ul className="space-y-3 mt-6 font-normal text-lg">
@@ -222,6 +229,7 @@ export default function page() {
                         </ul>
                     </div>
 
+                    {/* Host Info */}
                     <div>
                         <div className="flex gap-x-4 items-center">
                             <div className="h-20 w-20 rounded-full relative overflow-hidden">
@@ -241,11 +249,10 @@ export default function page() {
                                     </div>
 
                                     <div className="text-neutral-800 text-lg font-normal inline">
-                                        <Image className="icon object-contain inline mr-2" src={starGrayIcon} height={24} width={24} />
-                                        4.3 Rating (15 Reviews)
+                                        <Icon name='star' size={24} className=" icon inline mr-2"/> 
+                                         4.3 Rating (15 Reviews)
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                         <p className="mt-4 mb-8 text-neutral-500 text-lg font-normal max-w-2xl">
@@ -265,10 +272,196 @@ export default function page() {
                         
                     </div>
 
+                    {/* Rating... */}
+                    <div className="mt-14 mb-6">
+                        <h3 className="text-neutral-700 text-2xl font-semibold">Review 
+                            <span>
+                                <Image src={starFilledIcon} height={24} width={24} className="object-contain inline ml-6"/>                                 
+                            </span>
+                            <span className="text-primary-400">4.3</span>
+                            <span className="text-neutral-500 font-lg text-base font-medium">(20)</span>
+                        </h3>
+                        <ul className="max-w-md text-neutral-600 font-medium text-base mt-5 space-y-2 ">
+                            <li>
+                                Amenities
+                                <div className="space-x-2 float-right ">
+                                    <Image src={starFilledIcon} height={20} width={20} className="object-contain inline "/>
+                                    <Image src={starFilledIcon} height={20} width={20} className="object-contain inline "/>
+                                    <Image src={starFilledIcon} height={20} width={20} className="object-contain inline "/>
+                                    <Image src={starFilledIcon} height={20} width={20} className="object-contain inline "/>
+                                    <Image src={starFilledIcon} height={20} width={20} className="object-contain inline "/>
+                                    <span className="pl-1">5.0</span>
+                                </div>                            
+                            </li>
+
+                            <li>
+                                Communication
+                                <div className="space-x-2 float-right ">
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <span className="pl-1">5.0</span>
+                                </div>                            
+                            </li>
+
+                            <li>
+                                Lorem Ipusm
+                                <div className="space-x-2 float-right ">
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <span className="pl-1">5.0</span>
+                                </div>                            
+                            </li>
+                            <li>
+                                Hygiene
+                                <div className="space-x-2 float-right ">
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <span className="pl-1">5.0</span>
+                                </div>                            
+                            </li>
+                            <li>
+                                Location of Property
+                                <div className="space-x-2 float-right ">
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <Icon name="star" height={20} width={20} className="text-primary-400 inline "/>
+                                    <span className="pl-1">5.0</span>
+                                </div>                            
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+
+                    {/* Write review */}
+                    <div>
+                        <textarea className="w-full max-w-2xl border border-neutral-600 block rounded-lg mb-6" id="w3review" name="w3review" rows="4" cols="50"/>
+                        <button className="w-full max-w-64 py-3 rounded-md bg-transparent border border-neutral-400 text-neutral-400 text-lg font-normal ">Save Review</button>
+
+                        <ul className="text-neutral-300 max-w-2xl space-y-6 my-8">
+                            <li>
+                                <div className="flex gap-4 ">
+                                    <div className="h-12 w-12 rounded-full relative overflow-hidden">
+                                        <Image src='https://s3-alpha-sig.figma.com/img/1aa6/7521/2dba83baa62c2057ce79df83a3f0bd4c?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fSET88Um-EqYOGQXnQk~I3EGZ04BpWze5BUPJJUIyisKtLbYhTITrpdYEsMp~LsbiuOLfg5tR0gle~nKzVKR64lwcL0FUp7or9wZQ8S64WQGbuN38zm8FhtUPPOMBJ3mG3~Mrj1NNE5~1TNM04FMWvtuaJg6ou92tSJXOuGzL56Hzp7wz2vr9dshoKJ-Dle-6PwwLktbM5sFsEoYmq1w~h2Qi9xKshNfHMIABGj8UShlCDycvH8Vrey2aTKfJVYYz-BFvfCyWOaoBONNITiZwNA2OE7eQ9JQydNOIGF~uZGU5ETx0uEoDvmFQ~rjKUrtCfCstnrZ0Si-sBshzezreQ__' fill/>
+                                    </div>
+                                    <div className="block mt-2">
+                                        <h3 className="text-neutral-600 font-bold text-base">John Doberman</h3>
+                                        <h4 className="text-sm font-medium">Mar 12 2020</h4>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </li>
+                            <li>
+                                <div className="flex gap-4 ">
+                                    <div className="h-12 w-12 rounded-full relative overflow-hidden">
+                                        <Image src='https://s3-alpha-sig.figma.com/img/1aa6/7521/2dba83baa62c2057ce79df83a3f0bd4c?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fSET88Um-EqYOGQXnQk~I3EGZ04BpWze5BUPJJUIyisKtLbYhTITrpdYEsMp~LsbiuOLfg5tR0gle~nKzVKR64lwcL0FUp7or9wZQ8S64WQGbuN38zm8FhtUPPOMBJ3mG3~Mrj1NNE5~1TNM04FMWvtuaJg6ou92tSJXOuGzL56Hzp7wz2vr9dshoKJ-Dle-6PwwLktbM5sFsEoYmq1w~h2Qi9xKshNfHMIABGj8UShlCDycvH8Vrey2aTKfJVYYz-BFvfCyWOaoBONNITiZwNA2OE7eQ9JQydNOIGF~uZGU5ETx0uEoDvmFQ~rjKUrtCfCstnrZ0Si-sBshzezreQ__' fill/>
+                                    </div>
+                                    <div className="block mt-2">
+                                        <h3 className="text-neutral-600 font-bold text-base">John Doberman</h3>
+                                        <h4 className="text-sm font-medium">Mar 12 2020</h4>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <button className="w-full max-w-64 py-3 rounded-md bg-transparent border border-neutral-400 text-neutral-400 text-lg font-normal ">Show All 20 Reviews</button>
+
+                    </div>
+
+                    {/* Nearby Service */}
+                    <div className="mt-14">
+                        <h3 className="text-neutral-700 text-2xl font-semibold">Nearby Services</h3>
+                        <div className="mt-6 flex gap-x-6 mb-16">
+                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                            </div>
+
+                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                            </div>
+
+                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-                <div className="w-fit min-w-490px ">
+                <div className="w-fit  min-w-490px py-2 relative ">
+                    <div className="relative marker-class">
+                        <div className="h-auto mx-h-2xl bg-white sticky top-16 rounded-lg drop-shadow-booking-box">
 
+                        <div className="relative p-6 custom-underline-primary-400 ">
+                            <h3 className="text-neutral-700 font-semibold text-3xl">$20 <span className="text-neutral-500 text-lg"> /Night</span><span className="text-green-300 text-sm ml-3"> (Available)</span></h3>
+                        </div>
+                        <div className="mt-8 mx-6 border border-neutral-400 rounded-lg overflow-hidden">
+                            <div className="grid grid-cols-2">
+                                <div className="   py-4 px-8">
+                                    <label className="block text-neutral-600 text-sm font-semibold ">Check In</label>
+                                    <input className="text-neutral-300 font-medium"  placeholder="Add Dates" />
+                                </div>
+                                <div className=" py-4 px-8 border-l border-neutral-400">
+                                    <label className="block text-neutral-600 text-sm font-semibold ">Check Out</label>
+                                    <input className="text-neutral-300 font-medium"  placeholder="Add Dates" />
+                                </div>
+                            </div>                    
+                            <div className=" py-4 px-8 border-t border-neutral-400 col-2 relative">
+                                <label className="block text-neutral-600 text-sm font-semibold ">Guest</label>
+                                <input className="text-neutral-300 font-medium"  placeholder="Select Guest" />
+                                <Icon name="chevron-down" size={24} className="icon absolute-y-center right-4" /> 
+                            </div>
+                        </div>
+                        <div className="border-b-2">
+                            <ul className="mx-14 py-6 space-y-8  ">
+                                <li className="text-neutral-400 font-semibold text-lg">
+                                    $20 x 2 nights 
+                                    <span className="text-neutral-500 float-right">$60</span>                        
+                                </li>
+
+                                <li className="text-neutral-400 font-semibold text-lg">
+                                    Service Fee
+                                    <span className="text-neutral-500 float-right">$10</span>                        
+                                </li>
+
+                                <li className="text-neutral-400 font-semibold text-lg">
+                                    Bedbd fee
+                                    <span className="text-neutral-500 float-right">$20</span>                        
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div className="text-neutral-600 font-semibold text-lg py-6 mx-14">
+                                Total
+                                <span className="text-neutral-700 float-right">$90</span>                        
+                            </div>
+                        </div>
+
+                        <button className="mt-4 mb-8 btn btn-primary rounded-full max-w-96 relative-x-center">Reserve Now</button>
+                        </div>
+                    </div>
+                    
+
+
+                    
                 </div>
             </div>
         </div>

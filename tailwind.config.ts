@@ -22,6 +22,10 @@ const config: Config = {
         'btn-primary': '0px 0px 8px 0px var(--clr-primary-300);',
         'search-input': '0px 0px 15px 0px rgba(0, 0, 0, 0.06);',
         'search-section': '0px 0px 30px 0px rgba(0, 0, 0, 0.10);',
+        'nearby-service': '0px 0px 8px 0px rgba(194, 198, 204, 0.50);',
+      },
+      dropShadow: {
+        'booking-box': '0px 0px 20px rgba(0, 0, 0, 0.08)',
       },
       spacing: {
         '19': '4.75rem',

@@ -158,6 +158,10 @@
     content: '';
     @apply absolute-x-center top-6 w-full-plus-12 max-w-lg h-0.5 bg-primary-400  
   }
+  .custom-underline-primary-400::after {
+    content: '';
+    @apply absolute-x-center bottom-0 w-full h-0.5 bg-primary-400  
+  }
   .custom-bg-line-300::before{
     content: '';
     @apply absolute-y-center w-full h-px bg-neutral-300 -z-50
