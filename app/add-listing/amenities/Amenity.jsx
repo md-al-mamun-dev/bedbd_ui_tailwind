@@ -11,6 +11,7 @@ export default function Amenity({data}) {
         document.getElementById(data['_id']).click()
         setChecked(!checked)
     }
+
   return (
     <div className='flex gap-x-2 mb-3 text-neutral-500 cursor-pointer select-none' onClick={handleClick}>
         {

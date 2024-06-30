@@ -183,7 +183,7 @@ export default function page() {
                         }
                     )
                 }
-            </div>
+              </div>
 
               <div className="flex gap-x-8 mt-14 max-w-3xl ml-auto mr-auto">
                 <button className="btn btn-secondary max-w-36 relative">

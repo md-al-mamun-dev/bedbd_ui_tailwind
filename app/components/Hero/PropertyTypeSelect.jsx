@@ -2,7 +2,7 @@ import PropertyTypeSelectClientOperation from './PropertyTypeSelectClientOperati
 
 export default function PropertyTypeSelect() {
   return (
-    <div className=" hidden md:inline-flex md:space-x-2 md:relative-x-center md:top-8 ">
+    <div className=" hidden md:inline-flex md:space-x-2 md:absolute-x-center md:-top-16 md:w-max">
         <h3 className='uppercase text-primary-400 text-4xl font-bold '>find</h3>
         <div className="text-neutral-600 font-semibold space-x-7 mt-auto select-none" id="property_type_select">
             

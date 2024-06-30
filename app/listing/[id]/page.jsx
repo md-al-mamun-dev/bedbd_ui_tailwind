@@ -4,6 +4,7 @@ import Images from './Images'
 import dynamic from 'next/dynamic';
 import starFilledIcon from '/public/icons/star_filled.svg'
 import Image from "next/image";
+
 import Icon from "@/app/components/Icon";
 
 import bedIcon from '/public/icons/bed.svg'
@@ -22,9 +23,6 @@ import starGrayIcon from '/public/icons/star_gray.svg'
 
 
 
-// award
-// shield-check.svg
-// star_gray.svg
 
 
 
@@ -64,7 +62,7 @@ export default function page() {
   return (
     <>
         <Header/>
-        <div className="container mx-auto px-6 mt-10 ">
+        <div className="container mx-auto px-6 mt-10  ">
             <div className="mt-10 flex flex-col xl:flex-row gap-4">
                 <Images data={images}/>
                 <Map/>
@@ -105,8 +103,8 @@ export default function page() {
                 </div>
             </div>
 
-            <div className="min-h-96 flex flex-col xl:flex-row gap-4">
-                <div className="w-full  ">
+            <div className=" flex flex-col xl:flex-row gap-4">
+                <div className="">
                     {/* Title */}
                     <div>
                         <h2 className="font-semibold text-3xl text-neutral-600">Ocean Blue, Labonno point, Cox bazar</h2>
@@ -385,31 +383,29 @@ export default function page() {
                     </div>
 
                     {/* Nearby Service */}
-                    <div className="mt-14">
+                    <div className="w-auto xl:max-w-724px 2xl:max-w-978px overflow-hidden mt-14 ">
                         <h3 className="text-neutral-700 text-2xl font-semibold">Nearby Services</h3>
-                        <div className="mt-6 flex gap-x-6 mb-16">
-                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
-                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
-                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
-                            </div>
+                            <div className="mt-6 flex gap-x-6 mb-16">
+                                <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                    <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                    <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                                </div>
 
-                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
-                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
-                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
-                            </div>
+                                <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                    <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                    <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                                </div>
 
-                            <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
-                                <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
-                                <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                                <div className="w-72 h-28 rounded-lg  px-6 shadow-nearby-service relative">
+                                    <h3 className="text-neutral-600 text-base font-bold absolute top-8">Grill Restro & Bar</h3>
+                                    <p className="text-neutral-300 text-sm font-medium absolute bottom-8">100 meters away</p>
+                                </div>
                             </div>
-                        </div>
                     </div>
 
                 </div>
                 <div className="w-fit  min-w-490px py-2 relative ">
-                    <div className="relative marker-class">
-                        <div className="h-auto mx-h-2xl bg-white sticky top-16 rounded-lg drop-shadow-booking-box">
-
+                    <div className=" top-12  sticky rounded-lg drop-shadow-booking-box bg-white">
                         <div className="relative p-6 custom-underline-primary-400 ">
                             <h3 className="text-neutral-700 font-semibold text-3xl">$20 <span className="text-neutral-500 text-lg"> /Night</span><span className="text-green-300 text-sm ml-3"> (Available)</span></h3>
                         </div>
@@ -456,8 +452,13 @@ export default function page() {
                         </div>
 
                         <button className="mt-4 mb-8 btn btn-primary rounded-full max-w-96 relative-x-center">Reserve Now</button>
-                        </div>
                     </div>
+                    {/* <div className="relative sticky marker-class">
+                        <div className="h-auto mx-h-2xl bg-white  top-16 rounded-lg drop-shadow-booking-box">
+
+
+                        </div>
+                    </div> */}
                     
 
 

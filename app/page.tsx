@@ -15,8 +15,9 @@ export default function Home() {
   return (
     <main >
       <Header/>
-      {/* <div>...</div> */}
+
       <Hero/>
+
       <PropertyGallery/>
 
       <PropertyGallery/>

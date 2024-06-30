@@ -16,7 +16,6 @@ export default function Banner() {
                 <h3 className='font-extrabold text-8xl text-white'>
                     BANNER
                 </h3>
-
             </div>           
         </div>
     </div>

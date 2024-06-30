@@ -104,6 +104,11 @@ const config: Config = {
             fontSize: '14px',
           },
         },
+        '.placeholder-text-center': {
+          '&::placeholder': {
+            textAlign: 'center',
+          },
+        },
         '.placeholder-text-netural-300': {
           '&::placeholder': {
             color: 'var(--clr-neutral-300)',
