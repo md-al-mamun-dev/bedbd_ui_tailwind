@@ -1,6 +1,10 @@
 import type { Config } from "tailwindcss";
 import plugin from 'tailwindcss/plugin';
 
+
+
+
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -43,7 +47,6 @@ const config: Config = {
         '395px': '395px',
         '724px':'724px',
         '978px':'978px'
-
       },
       maxHeight: {
         '242px': '242px',
@@ -91,7 +94,6 @@ const config: Config = {
     },
   },
   plugins: [
-
     plugin(function({ addUtilities }) {
       addUtilities({
         '.placeholder-medium': {

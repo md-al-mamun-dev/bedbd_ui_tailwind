@@ -39,7 +39,7 @@ export default function FilterSection() {
                     <label className='relative cursor-pointer py-2 px-4 rounded whitespace-nowrap' for="tag-cottage">Cottage</label>
 
 
-{/*  */}
+
 
                     <input className='hidden' type="checkbox" id="tag-all_1" name="property_tag_filter"  value="all"/>
                     <label className='relative cursor-pointer py-2 px-4 rounded whitespace-nowrap' for="tag-all_1">All</label>
@@ -70,7 +70,6 @@ export default function FilterSection() {
                     <PropertyTagFilterClientOperation/>
                 </div>
             </div>
-            
         </div>
   )
 }

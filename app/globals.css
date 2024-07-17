@@ -20,7 +20,7 @@
   --clr-secondary-400:      hsl(234, 86%, 61%);
 
 /* Neutral colors */
-   --clr-neutral-50: hsl(0, 0%, 94.12%);
+   --clr-neutral-50: hsl(0, 0%, 92%);
   --clr-neutral-100: hsl(0, 0%, 94.12%);
   --clr-neutral-150: hsl(0, 0%, 87%);
   --clr-neutral-200: hsl(0, 0%, 76.08%);
@@ -207,7 +207,11 @@
 
 
 }
-
+@layer utilities {
+  .grid-cols-host-property {
+      grid-template-columns: 96px 224px 320px auto;
+  }
+}
 .mapboxgl-popup-content {
   padding: 0 !important;
 }
